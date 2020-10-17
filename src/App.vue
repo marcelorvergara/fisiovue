@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <menu-bar></menu-bar>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import Menu from "@/components/Menu";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    menuBar: Menu
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.bg-company-green{
+  background: rgba(12, 177, 75, 1.0); /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, rgba(12, 177, 75, 1.0), #8DC26F);
+  background: -moz-linear-gradient(right, rgba(12, 177, 75, 1.0), #8DC26F);
+  background: -o-linear-gradient(right, rgba(12, 177, 75, 1.0), #8DC26F);
+  background: linear-gradient(to left, rgba(12, 177, 75, 1.0), #8DC26F);
+  font-weight: bolder;
+  color: white;
 }
 </style>
